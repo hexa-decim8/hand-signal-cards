@@ -113,10 +113,22 @@ window.flashCards = [
     signal: "Direction of Gameplay Signal",
     summary: "Illegal clockwise engagement that gains advantage.",
     ruleRef: "https://rules.wftda.com/04_penalties.html#gaining-position",
-    icon: "assets/official/direction.jpg",
+    icon: "assets/signals/direction.svg",
     officialKey: "direction",
     officialCue: "[Color], [Number], Direction",
     penaltyCode: "D",
+    officialSignalImage: "https://wftdaort.com/signals/page_6.jpg"
+  },
+  {
+    id: "illegal-contact",
+    penalty: "Illegal Contact",
+    signal: "Illegal Contact Signal",
+    summary: "Illegal blocking contact that results in a penalty.",
+    ruleRef: "https://rules.wftda.com/04_penalties.html#impact-with-an-illegal-blocking-zone",
+    icon: "assets/official/direction.jpg",
+    officialKey: "illegal-contact",
+    officialCue: "[Color], [Number], Illegal Contact",
+    penaltyCode: "C",
     officialSignalImage: "https://wftdaort.com/signals/page_6.jpg"
   },
   {
@@ -154,5 +166,53 @@ window.flashCards = [
     officialCue: "[Color], [Number], Misconduct",
     penaltyCode: "G",
     officialSignalImage: "https://wftdaort.com/signals/page_10.jpg"
+  },
+  {
+    id: "destruction",
+    penalty: "Destruction",
+    signal: "Out of Play Signal",
+    summary: "Damaging or destroying equipment or property in violation of rules.",
+    ruleRef: "https://rules.wftda.com/04_penalties.html#other-illegal-procedures",
+    icon: "assets/signals/out-of-play.svg",
+    officialKey: "destruction",
+    officialCue: "[Color], [Number], Destruction",
+    penaltyCode: "T",
+    officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
+  },
+  {
+    id: "out-of-bounds",
+    penalty: "Out of Bounds",
+    signal: "Out of Play Signal",
+    summary: "Stepping or playing outside the designated track boundaries.",
+    ruleRef: "https://rules.wftda.com/04_penalties.html#gaining-position",
+    icon: "assets/signals/out-of-play.svg",
+    officialKey: "out of bounds",
+    officialCue: "[Color], [Number], Out of Bounds",
+    penaltyCode: "O",
+    officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
+  },
+  {
+    id: "failure-to-return",
+    penalty: "Failure to Return",
+    signal: "Out of Play Signal",
+    summary: "Failure to return to the track or rejoin play after leaving.",
+    ruleRef: "https://rules.wftda.com/04_penalties.html#interfering-with-the-flow-of-the-game",
+    icon: "assets/signals/out-of-play.svg",
+    officialKey: "failure to return",
+    officialCue: "[Color], [Number], Failure to Return",
+    penaltyCode: "R",
+    officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
+  },
+  {
+    id: "failure-to-yield",
+    penalty: "Failure to Yield",
+    signal: "Out of Play Signal",
+    summary: "Failure to yield to other skaters or maintain proper positioning.",
+    ruleRef: "https://rules.wftda.com/04_penalties.html#interfering-with-the-flow-of-the-game",
+    icon: "assets/signals/out-of-play.svg",
+    officialKey: "failure to yield",
+    officialCue: "[Color], [Number], Failure to Yield",
+    penaltyCode: "Y",
+    officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   }
 ];
