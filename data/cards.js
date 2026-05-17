@@ -89,7 +89,7 @@ window.flashCards = [
     signal: "Out of Play Signal",
     summary: "Warning for failure to return to or maintain legal engagement relative to the pack.",
     ruleRef: "https://rules.wftda.com/04_penalties.html#interfering-with-the-flow-of-the-game",
-    icon: "assets/official/out-of-play.png",
+    icon: "assets/official/out of play.png",
     officialKey: "out of play",
     officialCue: "[Color], [Number], Out of Play",
     penaltyCode: "-",
