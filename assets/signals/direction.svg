@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 140" role="img" aria-label="direction referee hand signal icon">
+  <rect width="220" height="140" rx="14" fill="#fbf7f0" stroke="#23424a" stroke-width="4"/>
+  <circle cx="110" cy="34" r="13" fill="#23424a"/>
+  <line x1="110" y1="48" x2="110" y2="90" stroke="#23424a" stroke-width="8" stroke-linecap="round"/>
+  <line x1="110" y1="66" x2="88" y2="116" stroke="#23424a" stroke-width="8" stroke-linecap="round"/>
+  <line x1="110" y1="66" x2="132" y2="116" stroke="#23424a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M56 84 A58 36 0 1 0 164 84" fill="none" stroke="#1d6c6e" stroke-width="6"/><polyline points="146,44 166,46 154,62" fill="none" stroke="#1d6c6e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><line x1="110" y1="62" x2="150" y2="52" stroke="#1d6c6e" stroke-width="8" stroke-linecap="round"/>
+  <text x="110" y="130" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="#1d6c6e">direction</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 140" role="img" aria-label="Fallback referee signal icon">
+  <rect width="220" height="140" rx="14" fill="#f6f8f8" stroke="#23424a" stroke-width="4"/>
+  <circle cx="110" cy="36" r="13" fill="#23424a"/>
+  <line x1="110" y1="50" x2="110" y2="92" stroke="#23424a" stroke-width="8" stroke-linecap="round"/>
+  <line x1="110" y1="64" x2="76" y2="80" stroke="#1d6c6e" stroke-width="8" stroke-linecap="round"/>
+  <line x1="110" y1="64" x2="144" y2="80" stroke="#1d6c6e" stroke-width="8" stroke-linecap="round"/>
+  <text x="110" y="128" text-anchor="middle" font-family="Trebuchet MS, sans-serif" font-size="14" fill="#23424a">signal icon</text>
+</svg>

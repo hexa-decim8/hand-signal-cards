@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roller Derby Penalty Signal Flashcards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-labelledby="app-title">
+      <header class="app-header">
+        <h1 id="app-title">Roller Derby Signal Flashcards</h1>
+        <p class="subtitle">
+          Train WFTDA referee hand signal recognition against penalty names.
+        </p>
+      </header>
+
+      <section class="controls" aria-label="Session controls">
+        <label class="mode-picker" for="mode-select">Practice mode</label>
+        <select id="mode-select" name="mode-select">
+          <option value="random" selected>Random both directions</option>
+          <option value="signal-to-penalty">Signal to Penalty</option>
+          <option value="penalty-to-signal">Penalty to Signal</option>
+        </select>
+        <button id="reset-btn" type="button">New Round</button>
+      </section>
+
+      <section class="stats" aria-live="polite" aria-label="Session statistics">
+        <p><strong id="stat-seen">0</strong> seen</p>
+        <p><strong id="stat-correct">0</strong> correct</p>
+        <p><strong id="stat-accuracy">0%</strong> accuracy</p>
+        <p><strong id="stat-remaining">0</strong> remaining</p>
+      </section>
+
+      <section class="flashcard-wrap" aria-label="Flashcard">
+        <article class="flashcard" id="flashcard" data-flipped="false">
+          <div class="face face-front" id="card-front">
+            <p class="face-label" id="prompt-label"></p>
+            <h2 id="prompt-value"></h2>
+            <p id="prompt-hint" class="hint"></p>
+          </div>
+
+          <div class="face face-back" id="card-back" aria-hidden="true">
+            <p class="face-label" id="answer-label"></p>
+            <h2 id="answer-value"></h2>
+            <div class="icon-box">
+              <img id="signal-icon" src="" alt="" />
+            </div>
+            <p class="official-meta"><strong>Penalty code:</strong> <span id="penalty-code"></span></p>
+            <p class="official-meta"><strong>Official cue:</strong> <span id="official-cue"></span></p>
+            <p class="rule-ref">
+              Official signal image:
+              <a id="official-image-link" href="#" target="_blank" rel="noopener noreferrer">Open page image</a>
+            </p>
+            <p id="answer-summary" class="summary"></p>
+            <p class="rule-ref">
+              Rule reference:
+              <a id="rule-link" href="#" target="_blank" rel="noopener noreferrer">Open source</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="actions" aria-label="Card actions">
+        <button id="prev-btn" type="button">Previous</button>
+        <button id="flip-btn" type="button">Flip Card</button>
+        <button id="correct-btn" type="button">I was Correct</button>
+        <button id="incorrect-btn" type="button">I missed it</button>
+        <button id="next-btn" type="button">Next</button>
+      </section>
+
+      <p id="status-line" class="status" aria-live="polite"></p>
+
+      <footer class="app-footer">
+        <p>
+          Keyboard: <kbd>Space</kbd>/<kbd>Enter</kbd> flip, <kbd>C</kbd> correct, <kbd>X</kbd> missed,
+          <kbd>←</kbd>/<kbd>→</kbd> move, <kbd>R</kbd> new round, <kbd>Esc</kbd> unzoom image.
+        </p>
+      </footer>
+    </main>
+
+    <script src="data/cards.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
