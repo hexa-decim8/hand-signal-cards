@@ -173,7 +173,7 @@ window.flashCards = [
     signal: "Out of Play Signal",
     summary: "Damaging or destroying equipment or property in violation of rules.",
     ruleRef: "https://rules.wftda.com/04_penalties.html#other-illegal-procedures",
-    icon: "assets/official/out-of-play.png",
+    icon: "assets\\official\\out of play.png",
     officialKey: "destruction",
     officialCue: "[Color], [Number], Destruction",
     penaltyCode: "T",
