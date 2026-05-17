@@ -91,9 +91,15 @@ function setImageZoom(zoomed) {
   signalIcon.setAttribute("aria-expanded", String(zoomed));
 }
 
+function syncFlipState() {
+  flashcard.dataset.flipped = String(state.flipped);
+  document.getElementById("card-back").setAttribute("aria-hidden", String(!state.flipped));
+}
+
 function updateSignalImageResolution() {
   const naturalWidth = signalIcon.naturalWidth;
-  if (!naturalWidth) {
+  const naturalHeight = signalIcon.naturalHeight;
+  if (!naturalWidth || !naturalHeight) {
     return;
   }
 
@@ -106,7 +112,10 @@ function updateSignalImageResolution() {
 
   // Keep the image large, but avoid stretching beyond native pixel detail.
   const targetMaxWidth = Math.min(680, sharpCssWidth);
+  const sharpCssHeight = Math.floor(naturalHeight / dpr);
+  const targetMaxHeight = Math.min(420, sharpCssHeight);
   signalIcon.style.setProperty("--signal-max-width", `${targetMaxWidth}px`);
+  signalIcon.style.setProperty("--signal-max-height", `${targetMaxHeight}px`);
 }
 
 function toggleImageZoom() {
@@ -119,6 +128,7 @@ function toggleImageZoom() {
 
 function renderCard() {
   if (state.deck.length === 0) {
+    syncFlipState();
     promptLabel.textContent = "No cards";
     promptValue.textContent = "No penalty cards are available.";
     promptHint.textContent = "Add entries to data/cards.js to start practicing.";
@@ -141,6 +151,9 @@ function renderCard() {
   if (!item) {
     return;
   }
+
+  // Apply flip state before content updates so the next image cannot flash while advancing.
+  syncFlipState();
 
   const { card, direction } = item;
   const promptIsSignal = direction === "signal-to-penalty";
@@ -191,8 +204,7 @@ function syncControls() {
   correctBtn.disabled = !hasCard || !state.flipped || answered;
   incorrectBtn.disabled = !hasCard || !state.flipped || answered;
 
-  flashcard.dataset.flipped = String(state.flipped);
-  document.getElementById("card-back").setAttribute("aria-hidden", String(!state.flipped));
+  syncFlipState();
 }
 
 function flipCard() {

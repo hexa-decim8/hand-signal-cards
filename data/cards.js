@@ -113,7 +113,7 @@ window.flashCards = [
     signal: "Direction of Gameplay Signal",
     summary: "Illegal clockwise engagement that gains advantage.",
     ruleRef: "https://rules.wftda.com/04_penalties.html#gaining-position",
-    icon: "assets/official/direction.jpg",
+    icon: "assets/official/direction.png",
     officialKey: "direction",
     officialCue: "[Color], [Number], Direction",
     penaltyCode: "D",
