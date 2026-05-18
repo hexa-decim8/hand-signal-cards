@@ -180,14 +180,14 @@ window.flashCards = [
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   },
   {
-    id: "out-of-bounds",
-    penalty: "Out of Bounds",
+    id: "out-of-play",
+    penalty: "Warning",
     signal: "Out of Play Signal",
     summary: "Stepping or playing outside the designated track boundaries.",
     ruleRef: "https://rules.wftda.com/04_penalties.html#gaining-position",
     icon: "assets\\official\\out of play.png",
     officialKey: "out of bounds",
-    officialCue: "[Color], [Number], Out of Bounds",
+    officialCue: "Out of play",
     penaltyCode: "O",
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   },
@@ -217,13 +217,13 @@ window.flashCards = [
   },
   {
     id: "no-pack",
-    penalty: "No Pack",
-    signal: "Out of Play Signal",
+    penalty: "Warning",
+    signal: "No Pack Signal",
     summary: "Engagement occurs too far from the pack or outside the legal pack zone.",
     ruleRef: "https://rules.wftda.com/04_penalties.html#interfering-with-the-flow-of-the-game",
     icon: "assets/official/no pack.jpg",
     officialKey: "no pack",
-    officialCue: "[Color], [Number], No Pack",
+    officialCue: "No Pack",
     penaltyCode: "N",
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   },
@@ -325,13 +325,13 @@ window.flashCards = [
   },
   {
     id: "pack-definition",
-    penalty: "Pack Definition",
+    penalty: "Warning",
     signal: "Pack Definition Signal",
     summary: "Warning for establishing or clarifying the pack definition for legal engagement.",
     ruleRef: "https://rules.wftda.com/04_penalties.html",
     icon: "assets/official/pack definition.png",
     officialKey: "pack definition",
-    officialCue: "[Color], [Number], Pack Definition",
+    officialCue: "Pack is here",
     penaltyCode: "M",
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   },
@@ -343,7 +343,7 @@ window.flashCards = [
     ruleRef: "https://rules.wftda.com/04_penalties.html",
     icon: "assets/official/no pass no penalty.png",
     officialKey: "no pass no penalty",
-    officialCue: "[Color], [Number], No Pass No Penalty",
+    officialCue: "No Pass No Penalty",
     penaltyCode: "H",
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   },
@@ -355,7 +355,7 @@ window.flashCards = [
     ruleRef: "https://rules.wftda.com/04_penalties.html",
     icon: "assets/official/official timeout.png",
     officialKey: "official timeout",
-    officialCue: "[Color], [Number], Official Timeout",
+    officialCue: "Official Timeout",
     penaltyCode: "L",
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   },
@@ -367,7 +367,7 @@ window.flashCards = [
     ruleRef: "https://rules.wftda.com/04_penalties.html",
     icon: "assets/official/team timeout.png",
     officialKey: "team timeout",
-    officialCue: "[Color], [Number], Team Timeout",
+    officialCue: "Team Timeout",
     penaltyCode: "E",
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   },
@@ -379,8 +379,8 @@ window.flashCards = [
     ruleRef: "https://rules.wftda.com/04_penalties.html",
     icon: "assets/official/star pass.png",
     officialKey: "star pass",
-    officialCue: "[Color], [Number], Star Pass",
-    penaltyCode: "A",
+    officialCue: "",
+    penaltyCode: "",
     officialSignalImage: "https://wftdaort.com/signals/page_11.jpg"
   }
 ];
